@@ -1,4 +1,4 @@
-# **Robot_Trading**
+# **Robot Trading**
 Este proyecto utiliza tecnologías como Python , Numpy , Matplotlib, Web Scraping y estrategias personalizadas para automatizar el análisis de datos en tiempo real
 # **Breve Descripción del Proyecto**
 **1. Configuración del Ambiente:**
