@@ -121,7 +121,7 @@ def tomar_decisiones():
 
 """#5. Visualización"""
 
-def visualización():
+def visualizacion():
   global df_bitcoin, precio_actual, tendencia, media_bitcoin,  algoritmo_decision
 
   #Adiciono una columna nueva con el valor de la media
@@ -140,16 +140,19 @@ def visualización():
   plt.axhline(y = media_bitcoin , color = 'r', linestyle = '-', xmin=0.05, xmax=0.95)
   plt.xlabel('Ultimos 7 dias de cotización')
   plt.ylabel('Precio del cierre de la cotizacón')
-  plt.legend([algoritmo_decision], loc = 'upper right')
+  legend_labels = ['Algoritmo de decisión: ' + algoritmo_decision, 'Promedio: ' + str(media_bitcoin)]
+  plt.legend(legend_labels, loc='upper right')
   plt.show()
 
 """#6. Automatización"""
+def principal():
+    while(True):
+      clear_output()
+      importar_base_bitcoin()
+      extraer_tendencias()
+      limpieza_datos()
+      tomar_decisiones()
+      visualizacion()
+      time.sleep(300)
 
-while(True):
-  clear_output()
-  importar_base_bitcoin()
-  extraer_tendencias()
-  limpieza_datos()
-  tomar_decisiones()
-  visualización()
-  time.sleep(300)
+principal()        
