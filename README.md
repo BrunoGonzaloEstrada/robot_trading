@@ -22,5 +22,6 @@ La función 'visualización' crea un gráfico que muestra el precio del Bitcoin 
 La función 'principal' ejecuta un bucle infinito que actualiza los datos, realiza análisis y toma decisiones cada 5 minutos utilizando las funciones anteriores. Se utiliza clear_output para borrar la salida anterior en Jupyter Notebook. El script se ejecuta continuamente, lo que permite tomar decisiones automatizadas en función de las condiciones del mercado.
 
 
+![Grafico_Robot_Trading](https://github.com/BrunoGonzaloEstrada/robot_trading/assets/148375715/eea9026d-9120-42e5-8d79-99fa0c5b3d11)
 
 
